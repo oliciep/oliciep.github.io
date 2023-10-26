@@ -17,6 +17,19 @@ body {
     min-height: 100%;
 }
 
+h1.typewriter {
+    font-size: 50px;
+    padding-top: 20px;
+    text-align: center; /* Center the text horizontally */
+}
+
+@media (max-width: 480px) {
+    h1.typewriter {
+        font-size: 30px; /* Adjust font size for mobile */
+        padding-top: 10px; /* Reduce padding for mobile */
+    }
+}
+
 .typewriter {
     display: block; /* Change to block */
     white-space: nowrap;
@@ -56,36 +69,51 @@ body {
   }
 }
 
-.subtext {
-    color:gray;
-    margin-left: 10px;
-    margin-top: -35px;
-    font-size: 30px;
-    opacity: 0;  
-    animation: fadeIn 1s ease-in forwards;
-    animation-delay: 3s;
+.intro-text {
+    font-size: 50px;
+    text-align: center; /* Center the text horizontally */
+    padding: 20px; /* Add some padding for spacing on mobile */
+    max-width: 100%; /* Ensure the text doesn't exceed the screen width */
 }
 
-.gradient-background {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: gradient 15s ease infinite;
-    z-index: -1; 
+.highlight {
+    font-weight: bold; /* Highlighted text in bold */
+    color: inherit; /* Inherit the parent text color */
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+    .intro-text {
+        font-size: 24px; /* Adjust font size for mobile */
+        padding: 10px; /* Reduce padding for mobile */
     }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+}
+
+.social-buttons {
+    text-align: center;
+}
+
+.github-button, .linkedin-button {
+    display: inline-flex; /* Use flex to align items horizontally */
+    align-items: center; /* Center vertically */
+    padding: 2% 5%;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    transition: transform 0.2s, background-color 0.2s;
+    width: auto;
+}
+
+.github-button img, .linkedin-button img {
+    margin-right: 10px; /* Adjust the spacing between the image and text */
+    width: 20px; /* Adjust the image width as needed */
+    height: 20px; /* Adjust the image height as needed */
+}
+
+.github-button:hover, .linkedin-button:hover {
+    background-color: #444;
+    transform: scale(1.05);
 }
 
 .toolbar {
@@ -438,7 +466,7 @@ form { margin: 0 auto; }
 }
 
 .contact-form .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center; /* Center the form elements */
 }
 
