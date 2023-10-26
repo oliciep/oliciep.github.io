@@ -441,6 +441,66 @@ footer p {
     font-size: 14px; /* Adjust font size as needed */
 }
 
+.skills-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+}
+
+.skills-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-basis: calc(25% - 40px); /* Four items per row with spacing */
+    margin-right: 40px; /* Add right margin for spacing */
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.skills-list li img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.skills-list a {
+    text-decoration: none;
+    color: #e1e1e4;
+    font-weight: bold;
+}
+
+.skills-list li:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 800px) {
+    .skills-list li {
+        flex-basis: calc(33.33% - 40px); /* Three items per row with spacing */
+    }
+}
+
+@media (max-width: 640px) {
+    .skills-list li {
+        flex-basis: calc(50% - 40px); /* Two items per row with spacing */
+    }
+}
+
+@media (max-width: 360px) {
+    .skills-list li {
+        flex-basis: calc(100% - 40px); /* One item per row with spacing */
+    }
+}
+
 section {
     padding-bottom: 600px;
 }
