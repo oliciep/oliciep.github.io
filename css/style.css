@@ -23,7 +23,7 @@ h1.typewriter {
     text-align: center; /* Center the text horizontally */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
     h1.typewriter {
         font-size: 30px; /* Adjust font size for mobile */
         padding-top: 10px; /* Reduce padding for mobile */
@@ -76,24 +76,24 @@ h1.typewriter {
     max-width: 100%; /* Ensure the text doesn't exceed the screen width */
 }
 
-.highlight {
-    font-weight: bold; /* Highlighted text in bold */
-    color: inherit; /* Inherit the parent text color */
-}
-
-/* Media Query for Mobile */
-@media (max-width: 480px) {
+@media (max-width: 580px) {
     .intro-text {
         font-size: 24px; /* Adjust font size for mobile */
         padding: 10px; /* Reduce padding for mobile */
     }
 }
 
+.highlight {
+    font-weight: bold; /* Highlighted text in bold */
+    color: inherit; /* Inherit the parent text color */
+}
+
+
 .social-buttons {
     text-align: center;
 }
 
-.github-button, .linkedin-button {
+.github-button, .linkedin-button, .resume-button {
     display: inline-flex; /* Use flex to align items horizontally */
     align-items: center; /* Center vertically */
     padding: 2% 5%;
@@ -103,18 +103,34 @@ h1.typewriter {
     background-color: #333;
     transition: transform 0.2s, background-color 0.2s;
     width: auto;
+    margin: 0 10px; /* Add margin between buttons */
 }
 
-.github-button img, .linkedin-button img {
+.github-button img, .linkedin-button img, .resume-button img {
     margin-right: 10px; /* Adjust the spacing between the image and text */
     width: 20px; /* Adjust the image width as needed */
     height: 20px; /* Adjust the image height as needed */
 }
 
-.github-button:hover, .linkedin-button:hover {
+.github-button:hover, .linkedin-button:hover, .resume-button:hover {
     background-color: #444;
     transform: scale(1.05);
 }
+
+@media (max-width: 465px) {
+    .github-button, .linkedin-button, .resume-button {
+        font-size: 0; /* Hide the text at this screen width by setting font size to 0 */
+        padding: 20px; /* Adjust the padding to make the buttons slightly bigger */
+        border-radius: 25px;
+    }
+
+    .github-button img, .linkedin-button img, .resume-button img {
+        margin-right: 0; /* Remove the margin between the image and the edge of the button */
+        display: block; /* Center the image within the button */
+        margin: 0 auto; /* Center the image horizontally within the button */
+    }
+}
+
 
 .toolbar {
     position: fixed;
@@ -132,6 +148,8 @@ h1.typewriter {
     border-radius: 15px;
 }
 
+
+
 /* Style the toolbar buttons */
 .toolbar a {
     color: #9ca0a8;
@@ -148,6 +166,26 @@ h1.typewriter {
 .toolbar a:hover {
     background-color: #1f2937;
     color: white;
+}
+
+@media (max-width: 640px) {
+    .toolbar {
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        width: 100%;
+        padding: 5px 0;
+        flex-direction: row; /* Set the flex-direction to row */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center-align items on new rows */
+    }
+
+    .toolbar a {
+        border-radius: 0;
+        width: auto; /* Adjust the width as needed */
+        flex: 1; /* Make buttons evenly spread in the row */
+        text-align: center; /* Center-align text within buttons */
+    }
 }
 
 h1 {
@@ -247,6 +285,12 @@ h1 {
     padding: 20px;
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
+}
+
+@media (max-width: 650px) {
+    .project-container {
+        grid-template-columns: repeat(1, 1fr)
+    }
 }
 
 
@@ -364,36 +408,6 @@ h1 {
     opacity: 0.7;
 }
 
-@keyframes sparkle {
-    0% {
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8);
-        transform: scale(1);
-    }
-    50% {
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.8);
-        transform: scale(1.05);
-    }
-    100% {
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8);
-        transform: scale(1);
-    }
-}
-
-/* Apply the animation to your project container (slideshow) */
-.slideshow-container {
-    width: 554px;
-    overflow: hidden; /* Hide any overflow (just in case) */
-    animation: sparkle 5s ease infinite;
-    margin-left: auto;
-    margin-right: 90px;
-    padding-right: 20px;
-    opacity: 0;
-}
-
-.slideshow-container h2{
-    margin-right: 20px;
-}
-
 .fade {
     width: 550px;
     animation-name: fade;
@@ -498,6 +512,61 @@ footer p {
 @media (max-width: 360px) {
     .skills-list li {
         flex-basis: calc(100% - 40px); /* One item per row with spacing */
+    }
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.education-card {
+    background-color: #1f2937;
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    padding: 2%;
+}
+
+.education-card:hover {
+    background-color: #262d3a; /* Change the background color on hover */
+}
+
+.education-card-image {
+    flex: 1;
+    max-width: 40%;
+    overflow: hidden;
+}
+
+.education-card-image img {
+    width: 100%;
+    max-width: 100%; /* Ensure the image scales down with its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+.education-card-info {
+    flex: 1;
+}
+
+.education-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.education-description {
+    font-size: 20px;
+}
+
+@media (max-width: 470px) {
+    .education-description {
+        font-size: 16px;
     }
 }
 
