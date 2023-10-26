@@ -69,7 +69,7 @@ const bioHTML = `
 
             a {
                 text-decoration: none;
-                color: black;
+                color: #e1e1e4;
                 font-weight: bold;
             }
         </style>

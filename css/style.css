@@ -1,7 +1,7 @@
 html {
     height: 100%;
 }
-  
+
 body {
     margin: 0;
     padding: 0;
@@ -93,9 +93,10 @@ body {
     top: 20px; /* Adjust the vertical positioning as needed */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #060b17;
+    background-color: #060b17;  
     opacity: 0.7;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
@@ -107,7 +108,7 @@ body {
 .toolbar a {
     color: #9ca0a8;
     text-decoration: none;
-    padding: 8px 30px; /* Adjust padding as needed */
+    padding: 8px 10px; /* Adjust padding as needed */
     transition: background-color 0.5s, color 0.5s;
     border-radius: 10px;
 }
@@ -119,17 +120,6 @@ body {
 .toolbar a:hover {
     background-color: #1f2937;
     color: white;
-}
-
-@media screen and (max-width: 768px) {
-    .toolbar {
-        justify-content: space-between; /* Keep buttons horizontal */
-    }
-
-    .toolbar a {
-        margin: 0; /* Remove vertical margin */
-        padding: 10px; /* Adjust button padding */
-    }
 }
 
 h1 {
@@ -369,6 +359,7 @@ h1 {
     margin-left: auto;
     margin-right: 90px;
     padding-right: 20px;
+    opacity: 0;
 }
 
 .slideshow-container h2{
@@ -431,20 +422,24 @@ section {
     text-align: center;
 }
 
+form { margin: 0 auto; }
 
 .contact-form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 20px;
-    max-width: 400px;
-    width: 100%;
+    max-width: 100%;
+    width: auto;
     margin: 0 auto;
-    background-color: #262d3a; /* Set the desired color for the form */
+    background-color: #262d3a;
+    color: #e1e1e4;
+    text-align: left; /* Adjust text alignment */
+    margin: 0 20px; /* Add margin at the ends */
 }
 
 .contact-form .form-group {
-    margin-bottom: 20px;
-    color: #e1e1e4; /* Set the text color */
+    margin-bottom: 10px;
+    text-align: center; /* Center the form elements */
 }
 
 .contact-form label {
@@ -453,11 +448,14 @@ section {
 }
 
 .contact-form input,
-.contact-form textarea {
-    width: 100%;
+.contact-form textarea {    
     padding: 10px;
-    border: 1px solid #e1e1e4;
     border-radius: 5px;
+    flex: 1;
+    margin: 0 15px; /* Add margin to both sides of the input elements */
+    background: #111827;
+    color: #e1e1e4;
+    resize: vertical;
 }
 
 .contact-btn {
@@ -466,7 +464,9 @@ section {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;    
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center the button */
 }
 
 .contact-btn:hover {
