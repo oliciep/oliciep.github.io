@@ -38,7 +38,7 @@ h1.typewriter {
     border-right: 3px solid transparent;
     padding-right: 5px;
     padding-bottom: 20px;
-    animation: typing 10s steps(120, end);
+    animation: typing 5s steps(120, end);
     margin: 0 auto; /* Center the text */
     font-weight: bold;
     text-align: center; /* Center the text */
@@ -75,6 +75,10 @@ h1.typewriter {
     text-align: center; /* Center the text horizontally */
     padding: 20px; /* Add some padding for spacing on mobile */
     max-width: 100%; /* Ensure the text doesn't exceed the screen width */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 2s;
 }
 
 @media (max-width: 580px) {
@@ -92,6 +96,10 @@ h1.typewriter {
 
 .social-buttons {
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 3s;
 }
 
 .github-button, .linkedin-button, .resume-button {
@@ -160,13 +168,13 @@ h1.typewriter {
     border-radius: 10px;
 }
 
-.toolbar a:not(:last-child) {
-    margin-right: 5px; /* Adjust margin between buttons as needed */
+.toolbar a.active {
+    background-color: #1f2937; /* Highlight color */
+    color: white; /* Text color */
 }
 
-.toolbar a:hover {
-    background-color: #1f2937;
-    color: white;
+.toolbar a:not(:last-child) {
+    margin-right: 5px; /* Adjust margin between buttons as needed */
 }
 
 @media (max-width: 640px) {
@@ -291,10 +299,33 @@ h1 {
     margin-left: 5px; /* Add margin between tags */
 }
 
+@media (max-width: 470px) {
+    .project-card .tags {
+        flex-direction: column;
+    }
+
+    .project-card .tag {
+        margin: 5px 0; /* Add margin to the tags for spacing */
+    }
+}   
+
 .project-card h2 {
     margin: 0; /* Remove margin for the title */   
     color: #e1e1e4;
 }
+
+@media (max-width: 550px) {
+    .project-details h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+    .project-card h2 {
+        margin: 20px;
+    }
+}
+
 
 .project-card .project-details {
     position: absolute;
@@ -315,6 +346,7 @@ h1 {
 
 .project-card .project-details h2{
     color:#ffffff;
+    margin: 0;
 }
 
 .project-card:not(.slideshow-container .project-card):hover {
@@ -349,11 +381,6 @@ h1 {
     opacity: 0.7;
 }
 
-.right-align {
-    margin-left: auto;
-    margin-right: 150px;
-}
-
 footer {
     bottom: 0;
     background-color: #060b17;
@@ -383,6 +410,9 @@ footer p {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1200px; /* Adjust the maximum width as needed */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .skills-list li {
@@ -392,7 +422,6 @@ footer p {
     margin-bottom: 20px;
     flex-basis: calc(25% - 40px); /* Four items per row with spacing */
     margin-right: 40px; /* Add right margin for spacing */
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .skills-list li img {
@@ -446,6 +475,9 @@ footer p {
     overflow: hidden;
     margin: 20px;
     padding: 2%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .education-card:hover {
@@ -527,6 +559,9 @@ footer p {
   width: 100%;
   margin-top: 20px;
   list-style-type: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .timeline:before {
@@ -807,6 +842,10 @@ form { margin: 0 auto; }
     color: #e1e1e4;
     text-align: left; /* Adjust text alignment */
     margin: 0 20px; /* Add margin at the ends */
+    padding-bottom: 150px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .contact-form .form-group {
