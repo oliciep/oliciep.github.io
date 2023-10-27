@@ -202,17 +202,6 @@ h1 {
     margin-right: 10px
 }
 
-.infobar {
-    background-color: #333;
-    width: 150px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 50px;
-    border-radius: 25px 0px 0px 25px;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -222,59 +211,10 @@ h1 {
     }
 }
 
-.option {
-    background-color: #060b17;
-    color: #e1e1e4;
-    border:  2px solid #060b17;   
-    padding: 45px;
-    font-family: "Courier New", monospace;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.first-option {
-    border-radius: 25px 0 0 0;
-}
-
-.last-option {
-    border-radius: 0 0 0 25px;
-}
-
-.option:hover {
-    background-color: #1f2937;
-}
-
 .container {
     display: flex;
     opacity: 1;
     animation: fadeIn 1s ease-in forwards;
-}
-
-.textbox {
-    background-color: #1f2937;
-    padding-left:10px;
-    color: #e1e1e4;
-    transition: opacity 0.5s;
-    height: 443px;
-    width: 1200px;
-    border-top: 2px solid #060b17;
-    border-right: 2px solid #060b17;
-    border-bottom: 2px solid #060b17;
-    box-sizing: border-box;
-    border-radius: 0px 25px 25px 0px;
-    opacity: 1;
-}   
-
-.active {
-    border-left: 2px solid #060b17;
-    border-top: 2px solid #060b17;
-    border-bottom: 2px solid #060b17;
-    border-right: none; /* Remove the right border */
-    background-color: #1f2937;
 }
 
 .project-container {
@@ -409,36 +349,9 @@ h1 {
     opacity: 0.7;
 }
 
-.fade {
-    width: 550px;
-    animation-name: fade;
-    animation-duration: 10s; /* Time for each card to stay */
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-}
-
-@keyframes fade {
-    0%, 100% { opacity: 0; }
-    5%, 95% { opacity: 1; }
-}
-
 .right-align {
     margin-left: auto;
     margin-right: 150px;
-}
-
-.fade-in-text {
-    opacity: 0; /* Initially, set the opacity to 0 to hide the text */
-    animation: fadeIn 2s ease forwards; /* Apply the fadeIn animation */
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1; /* At the end of the animation, set the opacity to 1 to make the text fully visible */
-    }
 }
 
 footer {
