@@ -18,6 +18,7 @@
         <a href="#contact">Contact</a>
     </div>
     <section id="home">
+        <div class="mobile-spacing"><br><br></div>
         <h1 class="typewriter"><br><br>Oliver Cieplinski</h1> 
         <p class="intro-text">
             Hi, I'm Oli. I'm a recently graduated software engineer from the University of Exeter.
@@ -37,9 +38,11 @@
                 <img src="images/contacts/resume.png" alt="LinkedIn Icon"> Resume
             </a>
         </div>
+        <div class="phone-space"></div>
     </section>
     <section id="projects">
-        <h1 class ="typewriter"><br><br>My Projects</h1>
+        <div class="mobile-spacing"><br><br><br></div>
+        <h1 class ="typewriter"><br>My Projects</h1>
         <div class="project-container">
             <div class="project-card in-cont    ">
                 <div class="project-header">
@@ -181,7 +184,8 @@
         <script src="js/hover.js"></script>
         </section>
         <section id="skills">
-            <h1 class="typewriter"><br><br>My Skills</h1><br>
+            <div class="mobile-spacing"><br><br><br></div>
+            <h1 class="typewriter"><br>My Skills</h1><br>
             <div class="skills-list-container">
                 <ul class="skills-list">
                     <li>
@@ -193,8 +197,16 @@
                         <a>Java</a>
                     </li>
                     <li>
+                        <img src="images/langs/cplus.png" alt="cplus">
+                        <a>C++</a>
+                    </li>
+                    <li>
                         <img src="images/langs/csharp.png" alt="csharp">
                         <a>C#</a>
+                    </li>
+                    <li>
+                        <img src="images/langs/golang.png" alt="golang">
+                        <a>Go</a>
                     </li>
                     <li>
                         <img src="images/langs/html.png" alt="html">
@@ -207,6 +219,10 @@
                     <li>
                         <img src="images/langs/js.png" alt="javascript">
                         <a>JavaScript</a>
+                    </li>
+                    <li>
+                        <img src="images/langs/linux.png" alt="linux">
+                        <a>Linux</a>
                     </li>
                     <li>
                         <img src="images/langs/sql.png" alt="sql">
@@ -224,21 +240,19 @@
             </div>
         </section>
         <section id="experience">
-            <h1 class="typewriter"><br><br>My Experience</h1>
+            <div class="mobile-spacing"><br><br><br></div>
+            <h1 class="typewriter"><br>My Experience</h1>
             <ul class="timeline">
-                <!-- Item 1 -->
                 <li>
                   <div class="direction-r">
                     <div class="flag-wrapper">
                       <span class="hexa"></span>
-                      <span class="flag">Sainsburys</span>
+                      <span class="flag">Sainsbury's</span>
                       <span class="time-wrapper"><span class="time">01/2018 - 06/2018</span></span>
                     </div>
                     <div class="desc"><b>Food Services Assistant</b><br>Helped to prepare and distribute food products, take inventory of current stock, restock items and provide over the counter service to customers.</div>
                   </div>
                 </li>
-              
-                <!-- Item 2 -->
                 <li>
                   <div class="direction-l">
                     <div class="flag-wrapper">
@@ -252,7 +266,8 @@
               </ul>
         </section>
         <section id="education">
-            <h1 class="typewriter"><br><br>My Education</h1>
+            <div class="mobile-spacing"><br><br><br></div>
+            <h1 class="typewriter"><br>My Education</h1>
             <div class="center-container">
                 <div class="education-card">
                     <div class="education-card-image">
@@ -270,7 +285,8 @@
             </div>
         </section>
         <section id="contact">
-            <h1 class="typewriter"><br><br>Contact Me</h1>
+            <div class="mobile-spacing"><br><br><br></div>
+            <h1 class="typewriter"><br>Contact Me</h1>
             <div class="container contact-form">
                 <form method="POST" id="form">
 
@@ -287,7 +303,7 @@
                         <input type="text" name="name" required>
                     </div>
                     <label for="message" style="text-align: center;">Message</label>
-                    <textarea name="message" rows="4" cols="31" required></textarea>
+                    <textarea name="message" rows="4" cols="28" required></textarea>
                 
                     <button type="submit" class="btn contact-btn">Send</button>
                 
