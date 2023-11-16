@@ -9,11 +9,11 @@ This project is a HTML/CSS based scrolling website, that uses javascript for the
 ![](https://github.com/oliciep/oliciep.github.io/blob/main/demo.gif)
 
 ## Features
- -Scrolling site with dynamic scaling CSS for different screen sizes.
- -6 Distinct sections: Home, Projects, Skills, Experience, Education and Contact.
- -Javascript animations for styling on CSS.
- -Project-written HTML templates for styling and content.
- -Email functionality with client-side sanitisation
+- Scrolling site with dynamic scaling CSS for different screen sizes.
+- 6 Distinct sections: Home, Projects, Skills, Experience, Education and Contact.
+- Javascript animations for styling on CSS.
+- Project-written HTML templates for styling and content.
+- Email functionality with client-side sanitisation
 
 
 ## Acknowledgements
