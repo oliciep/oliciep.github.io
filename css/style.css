@@ -241,6 +241,70 @@ h1.typewriter {
 
 /* Projects Section Styling */
 
+.card1 {
+  background-color: #448aff;
+}
+
+.card2 {
+  background-color: #8bc34a;
+}
+
+.card3 {
+  background-color: #1565c0;
+}
+
+.card4 {
+  background-color: #ff9800;
+}
+
+.card5 {
+  background-color: #f44336;
+}
+
+.card6 {
+  background-color: #ad1457;
+}
+
+.card7 {
+  background-color: #009688;
+}
+
+.card8 {
+  background-color: #ffc107;
+}
+
+.tag1 {
+  background-color: #0362ff;
+}
+
+.tag2 {
+  background-color: #70a236;
+}
+
+.tag3 {
+  background-color: #11519a;
+}
+
+.tag4 {
+  background-color: #cc7a00;
+}
+
+.tag5 {
+  background-color: #e21b0c;
+}
+
+.tag6 {
+  background-color: #8a1046;
+}
+
+.tag7 {
+  background-color: #00786d;
+}
+
+.tag8 {
+  background-color: #d29d00;
+}
+
 .container {
     display: flex;
     opacity: 1;
@@ -283,7 +347,6 @@ h1.typewriter {
     height: 200px;
     border-radius: 5px;
     padding: 10px;
-    background-color: #262d3a;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     position: relative;
@@ -305,7 +368,6 @@ h1.typewriter {
 }
 
 .project-card .project-info .tag {
-    background-color: #111827;
     color: #e1e1e4;
     padding: 5px 10px;
     border-radius: 20px;
@@ -326,13 +388,6 @@ h1.typewriter {
     padding-right: 15px;
 }
 
-.project-card .tag {
-    background-color: #007BFF; 
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 20px;
-    margin-left: 5px; 
-}
 
 @media (max-width: 470px) {
     .project-card .tags {
