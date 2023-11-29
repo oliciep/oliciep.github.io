@@ -127,6 +127,7 @@ h1.typewriter {
   z-index: 2;
   padding: 5px;
   border-radius: 15px;
+  backdrop-filter: blur(10px);
 }
 
 .toolbar a {
@@ -328,7 +329,8 @@ h1.typewriter {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6 , 1fr);
+    justify-content: center;
     gap: 20px;
     opacity: 0.85;
     margin-bottom: 20px;
@@ -337,13 +339,38 @@ h1.typewriter {
     animation: fadeIn 1s ease-in forwards;
 }
 
+@media (max-width: 1200px) {
+  .project-container {
+      grid-template-columns: repeat(4, 1fr)
+  }
+}
+
 @media (max-width: 650px) {
     .project-container {
-        grid-template-columns: repeat(1, 1fr)
+        grid-template-columns: repeat(2, 1fr)
     }
 }
 
+@media (min-width: 1200px) {
+  .project-card:last-child:nth-child(3n - 1) {
+    grid-column-end: -2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card:last-child:nth-child(3n - 2) {
+    grid-column-end: 5;
+  }
+}
+
 .project-card {
+    grid-column: span 2;
     height: 200px;
     border-radius: 5px;
     padding: 10px;
@@ -352,6 +379,10 @@ h1.typewriter {
     position: relative;
     transition: transform 1s ease, opacity 1s ease;
     opacity: 1;
+}
+
+.project-card:last-child:nth-child(3n - 2) {
+  grid-column-end: 5;
 }
 
 .project-card .project-header {
