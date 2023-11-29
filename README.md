@@ -20,6 +20,7 @@ This project is a HTML/CSS based scrolling website, that uses javascript for the
 I used the following websites for help building my project:
  - [Dynamic CSS Timeline Template](https://niemvuilaptrinh.medium.com/27-html-timeline-for-web-design-979b8e5d1c05)
  - [Web3Forms for Email Functionality](https://web3forms.com/)
+ - [Particles.js Library for Background](https://vincentgarreau.com/particles.js/)
 
 
 
