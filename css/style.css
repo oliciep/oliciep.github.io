@@ -19,10 +19,18 @@ body {
 }
 
 #particles-js {
-  position : absolute;
-  width:100%;
-  height:100%;
-  z-index:-1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
 }
 
 h1 {
