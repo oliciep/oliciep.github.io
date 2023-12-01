@@ -1,4 +1,4 @@
-const words = ['Dynamic Programming', 'Learning From Data', 'Object-Oriented Programming', 'Network/Computer Security', 'Database Theory', 'High-Performance Computing', 'Nature-Inspired Computation'];
+const words = ['Dynamic Programming', 'Learning From Data', 'Object-Oriented Programming', 'Network/Computer Security', 'Group Software Project', 'Database Theory', 'Artificial Intelligence', 'C Family', 'High-Performance Computing', 'Nature-Inspired Computation', 'Computer Graphics', 'Enterprise Computing'];
 let currentIndex = 0;
 
 function showNextWord() {
@@ -12,7 +12,7 @@ function showNextWord() {
     currentIndex = (currentIndex + 1) % words.length; // Loop through words
   }, 1000); // Change word after 1 second
   
-  setTimeout(showNextWord, 3000); // Repeat every 3 seconds
+  setTimeout(showNextWord, 2000); // Repeat every 3 seconds
 }
 
 window.onload = function() {
