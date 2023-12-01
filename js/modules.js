@@ -1,4 +1,4 @@
-const words = ['Dynamic Programming', 'Learning From Data', 'Object-Oriented Programming', 'Network/Computer Security', 'Group Software Project', 'Database Theory', 'Artificial Intelligence', 'C Family', 'High-Performance Computing', 'Nature-Inspired Computation', 'Computer Graphics', 'Enterprise Computing'];
+const words = ['Dynamic Programming', 'Learning From Data', 'Object-Oriented Programming', 'Network and Computer Security', 'Group Software Project', 'Database Theory and Design', 'Artificial Intelligence', 'C Family', 'High-Performance Computing', 'Nature-Inspired Computation', 'Computer Graphics', 'Enterprise Computing'];
 let currentIndex = 0;
 
 function showNextWord() {

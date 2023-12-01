@@ -938,6 +938,7 @@ h1.typewriter {
 
 .education-title {
     font-size: 24px;
+    color: #00c896;
     margin: 0;
 }
 
@@ -953,9 +954,19 @@ h1.typewriter {
 
 .module-title {
   font-weight: bold;
+  font-style: italic;
+  color: #00c896;
   display: block;
   text-align: center;
+  font-size: 24px;
 }
+
+@media (max-width: 470px) {
+  .module-title {
+      font-size: 20px;
+  }
+}
+
 .modules {
   width: 100%;
   height: 50px;
