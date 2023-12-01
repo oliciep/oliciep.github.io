@@ -763,12 +763,26 @@ h1.typewriter {
   position: relative;
   margin: 1em 0 0 0;
   padding: 1em;
-  background: #262d3a;
+  background: #1f2937;
   -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   box-shadow: 0 0 1px rgba(0,0,0,0.20);
   border-radius: 5px;
   z-index: 15;
+}
+
+.desc:hover {
+  background-color: #262d3a;
+}
+
+.left-job {
+  text-align: left;
+}
+
+@media(max-width: 768px){
+  .left-job {
+    text-align: center;
+  }
 }
 
 .direction-l .desc,
