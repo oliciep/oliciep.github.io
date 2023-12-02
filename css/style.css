@@ -431,6 +431,14 @@ h1.typewriter {
     transition: transform 0.3s ease-in-out;
 }
 
+@media (max-width: 470px) {
+  .project-card img.project-image {
+      width: 100px;
+      height: 100px;
+      margin-right: 40px;
+  }
+}
+
 .project-card .tags {
     display: flex;
     justify-content: flex-end;
@@ -438,18 +446,10 @@ h1.typewriter {
 }
 
 
-@media (max-width: 470px) {
-    .project-card .tags {
-        flex-direction: column;
-    }
-
-    .project-card .tag {
-        margin: 5px 0;
-    }
-}   
 
 .project-card h2 {
     margin: 0;  
+    margin-left: 50px;
     color: #e1e1e4;
 }
 
@@ -461,7 +461,7 @@ h1.typewriter {
 
 @media (max-width: 550px) {
     .project-card h2 {
-        margin: 20px;
+        margin: 0px;
     }
 }
 
@@ -968,8 +968,7 @@ h1.typewriter {
 
 .module-title {
   font-weight: bold;
-  font-style: italic;
-  color: #00c896;
+  color: #049072;
   display: block;
   text-align: center;
   font-size: 24px;
