@@ -444,7 +444,8 @@ h1.typewriter {
   .project-card img.project-image {
       width: 150px;
       height: 150px;
-      padding-top: 50 px;
+      padding-right: 20px;
+      padding-top: 50px;
   }
 }
 
