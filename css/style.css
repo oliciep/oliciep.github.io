@@ -296,6 +296,7 @@ h1.typewriter {
   background-color: #da698e;
 }
 
+
 .tag1 {
   background-color: #1a7462;
 }
@@ -970,6 +971,8 @@ h1.typewriter {
 }
 
 .education-title {
+    display: block;
+    text-align: center;
     font-size: 24px;
     color: #00c896;
     margin: 0;
@@ -997,6 +1000,9 @@ h1.typewriter {
   .module-title {
       font-size: 20px;
   }
+  .education-card-image img {
+    display: none;
+}
 }
 
 .modules {
