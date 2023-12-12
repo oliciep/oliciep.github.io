@@ -298,39 +298,39 @@ h1.typewriter {
 
 
 .tag1 {
-  background-color: #1a7462;
+  background-color: #1a7462; /*#155d4e*/
 }
 
 .tag2 {
-  background-color: #4a9f38;
+  background-color: #4a9f38; /*#3b7f2d*/
 }
 
 .tag3 {
-  background-color: #1b445e;
+  background-color: #1b445e; /*#16364b*/
 }
 
 .tag4 {
-  background-color: #c23613;
+  background-color: #c23613; /*#9b2b0f*/
 }
 
 .tag5 {
-  background-color: #ae2126;
+  background-color: #ae2126; /*#8b1a1e*/
 }
 
 .tag6 {
-  background-color: #4c2b5e;
+  background-color: #4c2b5e; /*#3d224b*/
 }
 
 .tag7 {
-  background-color: #e2820a;
+  background-color: #e2820a; /*#b56808*/
 }
 
 .tag8 {
-  background-color: #d59c00;
+  background-color: #d59c00; /*#aa7d00*/
 }
 
 .tag9 {
-  background-color: #cd3567;
+  background-color: #cd3567; /*#a52952*/
 }
 
 .lg-view {
@@ -1018,9 +1018,6 @@ h1.typewriter {
   .module-title {
       font-size: 20px;
   }
-  .education-card-image img {
-    display: none;
-}
 }
 
 .modules {
