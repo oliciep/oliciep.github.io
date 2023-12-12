@@ -377,7 +377,7 @@ h1.typewriter {
   display: none;
 }
 
-@media (max-width: 500px) {
+@container projectCard (max-width: 450px) {
   .lg-view {
     display: none;
   }
@@ -451,6 +451,8 @@ h1.typewriter {
 }
 
 .project-card {
+    container-type: inline-size;
+    container-name: projectCard;
     grid-column: span 2;
     height: 230px;
     border-radius: 5px;
@@ -503,6 +505,7 @@ h1.typewriter {
     transition: transform 0.3s ease-in-out;
 }
 
+
 @media (max-width: 470px) {
   .project-card img.project-image {
       width: 150px;
@@ -512,15 +515,16 @@ h1.typewriter {
   }
 }
 
-@media (max-width: 470px) {
+@container projectCard (max-width: 400px) {
   .project-card .tags {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .project-card .tag {
     margin: 5px 0;
   }
 }
+
 
 .project-card .tags {
     display: flex;
