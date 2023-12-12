@@ -333,6 +333,42 @@ h1.typewriter {
   background-color: #cd3567; /*#a52952*/
 }
 
+.text1 {
+  color: #78e0cc;
+}
+
+.text2 {
+  color: #afdfa5;
+}
+
+.text3 {
+  color: #74b1d7;
+}
+
+.text4 {
+  color: #f4a490;
+}
+
+.text5 {
+  color: #eb9598;
+}
+
+.text6 {
+  color: #b48bc9;
+}
+
+.text7 {
+  color: #face98;
+}
+
+.text8 {
+  color: #ffde85;
+}
+
+.text9 {
+  color: #ecb4c6;
+}
+
 .lg-view {
   display: inline-block;
 }
@@ -444,10 +480,10 @@ h1.typewriter {
 }
 
 .project-card .project-info .tag {
-    color: #e1e1e4;
     padding: 5px 10px;
     border-radius: 20px;
     margin-left: 5px;
+    text-align: center;
 }
 
 .project-card .title {
@@ -494,7 +530,6 @@ h1.typewriter {
 
 .project-card h2 {
     margin: 0;  
-    color: #e1e1e4;
 }
 
 @media (max-width: 550px) {
