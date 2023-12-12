@@ -333,6 +333,24 @@ h1.typewriter {
   background-color: #cd3567;
 }
 
+.lg-view {
+  display: inline-block;
+}
+
+.sm-view {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .lg-view {
+    display: none;
+  }
+  
+  .sm-view {
+    display: inline-block;
+  }
+}
+
 .container {
     display: flex;
     opacity: 1;
