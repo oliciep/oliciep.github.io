@@ -13,10 +13,12 @@ This project is a HTML/CSS based scrolling website, that uses javascript for the
 - 6 Distinct sections: Home, Projects, Skills, Experience, Education and Contact.
 - Javascript animations for styling on CSS.
 - Project-written HTML templates for styling and content.
-- Email functionality with client-side sanitisation
+- Regularly updated information and project cards.
+- Email functionality with client-side sanitisation.
 
 ## Acknowledgements
 I used the following websites for help building my project:
+ - [FlatIcon for Card Images](https://www.flaticon.com)
  - [Dynamic CSS Timeline Template](https://niemvuilaptrinh.medium.com/27-html-timeline-for-web-design-979b8e5d1c05)
  - [Web3Forms for Email Functionality](https://web3forms.com/)
  - [Particles.js Library for Background](https://vincentgarreau.com/particles.js/)
