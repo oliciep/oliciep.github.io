@@ -10,7 +10,7 @@ This project is a HTML/CSS based scrolling website, that uses javascript for the
 
 ## Features
 - Scrolling site with dynamic scaling CSS for different screen sizes.
-- 6 Distinct sections: Home, Projects, Skills, Experience, Education and Contact.
+- 6 Distinct Sections: Home, Projects, Skills, Experience, Education and Contact.
 - Javascript animations for styling on CSS.
 - Project-written HTML templates for styling and content.
 - Regularly updated information and project cards.
