@@ -378,6 +378,10 @@ h1.typewriter {
   color: #ecb4c6;
 }
 
+.text10 {
+  color: #A9A9A9;
+}
+
 .border1 {
   border-color: #155d4e;
 }
@@ -712,6 +716,34 @@ h1.typewriter {
         flex-basis: calc(100% - 40px);
     }
 }
+
+.style-card-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Individual style card styling */
+.style-card {
+  padding: 15px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #060b17;
+  display: flex;
+  align-items: center;
+}
+
+.style-card img {
+  width: 50px; /* Set the width of the image */
+  height: auto;
+  margin-right: 10px; /* Adjust spacing between image and title */
+}
+
+/* GRAY COLOUR IS #A9A9A9 */
 
 /*Experience Section Styling */
 
