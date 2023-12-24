@@ -729,6 +729,8 @@ h1.typewriter {
 
 /* Individual style card styling */
 .style-card {
+  opacity: 0;
+  transition: opacity 4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 1s ease;
   padding: 15px;
   border-radius: 30px;
   overflow: hidden;
@@ -742,6 +744,10 @@ h1.typewriter {
   width: 50px; /* Set the width of the image */
   height: auto;
   margin-right: 10px; /* Adjust spacing between image and title */
+}
+
+.style-card:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* Lighten the background color on hover */
 }
 
 /* GRAY COLOUR IS #A9A9A9 */

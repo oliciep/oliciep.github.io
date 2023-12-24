@@ -23,7 +23,7 @@ function fadeInOnScroll(selector) {
 fadeInOnScroll('.intro-text');
 fadeInOnScroll('.social-buttons');
 fadeInOnScroll('.education-card');
-fadeInOnScroll('.skills-list');
+fadeInOnScroll('.style-card');
 fadeInOnScroll('.project-card');
 fadeInOnScroll('.timeline');
 fadeInOnScroll('.education-card');
