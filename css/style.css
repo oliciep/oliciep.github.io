@@ -723,7 +723,8 @@ h1.typewriter {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 0 20px;
 }
 
 /* Individual style card styling */
