@@ -18,6 +18,7 @@ body {
     min-height: 100%;
 }
 
+
 #particles-js {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -25,12 +26,19 @@ body {
   backface-visibility: hidden;
   -webkit-perspective: 1000;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
+  width: 100%; /* Occupy the full width of the container */
+  height: 800px; /* Occupy the full height of the container */
   position: absolute;
   z-index: 0;
   overflow: hidden;
+  opacity: 0.6;
+}
+
+@media (max-width: 580px) {
+  #particles-js {
+      opacity: 0.4;
+  }
 }
 
 h1 {
@@ -201,7 +209,7 @@ h1.typewriter {
 
 @media (max-width: 580px) {
     .intro-text {
-        font-size: 24px;
+        font-size: 30px;
         padding: 10px;
     }
 }
@@ -735,7 +743,6 @@ h1.typewriter {
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #060b17;
   display: flex;
   align-items: center;
 }
