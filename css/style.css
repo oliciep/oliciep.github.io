@@ -1125,9 +1125,14 @@ h1.typewriter {
 
 .education-card-info {
     flex: 1;
-    background-color: #111827;
-    padding: 0 20px 20px 0;
     border-radius: 20px;
+}
+
+.education-text {
+  font-size: 20px;
+  background-color: #111827;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .education-title {
@@ -1154,6 +1159,7 @@ h1.typewriter {
   display: block;
   text-align: center;
   font-size: 24px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 470px) {
