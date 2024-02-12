@@ -87,6 +87,12 @@ h1.typewriter {
     }
 }
 
+@media (min-width: 2000px) {
+  h1.typewriter.site-title {
+      font-size: 80px;
+  }
+}
+
 .typewriter {
     display: block;
     white-space: nowrap;
@@ -200,6 +206,17 @@ h1.typewriter {
   }
 }
 
+@media (min-width: 2000px) {
+  .toolbar a {
+      color: #9ca0a8;
+      text-decoration: none;
+      padding: 15px 20px; 
+      transition: background-color 0.5s, color 0.5s;
+      border-radius: 10px;
+      font-size: 24px;
+  }
+}
+
 /* Home Section Styling */
 
 #home {
@@ -214,7 +231,6 @@ h1.typewriter {
 .intro-text {
     font-size: 50px;
     text-align: center;
-    padding: 20px;
     max-width: 100%;
     opacity: 0;
     transform: translateY(20px);
@@ -227,6 +243,13 @@ h1.typewriter {
         font-size: 30px;
         padding: 10px;
     }
+}
+
+@media (min-width: 2000px) {
+  .intro-text {
+      font-size: 60px;
+      padding: 10px;
+  }
 }
 
 .highlight {
@@ -279,6 +302,8 @@ h1.typewriter {
         margin: 0 auto;
     }
 }
+
+
 
 
 /* Projects Section Styling */
