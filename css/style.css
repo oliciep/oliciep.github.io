@@ -150,6 +150,12 @@ h1.typewriter {
   }
 }
 
+@media (min-width: 2000px) {
+  .mobile-spacing {
+    display:block;
+  }
+}
+
 /* Toolbar Styling */
 
 .toolbar {
