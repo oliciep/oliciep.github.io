@@ -68,6 +68,12 @@ section {
 
 /* Text Effect Styling */
 
+
+.typewriter-container {
+  position: relative;
+  text-align: center;
+}
+
 h1.typewriter {
     font-size: 50px;
     padding-top: 20px;
