@@ -31,7 +31,6 @@ body {
   height: 100vh; /* Occupy the full height of the container */
   position: absolute;
   z-index: 0;
-  overflow: hidden;
   opacity: 0.5;
 }
 
