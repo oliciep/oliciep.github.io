@@ -27,12 +27,12 @@ body {
   -webkit-perspective: 1000;
   top: 0;
   left: 0;
-  width: 100%; /* Occupy the full width of the container */
-  height: 800px; /* Occupy the full height of the container */
+  width: 95vw; /* Occupy the full width of the container */
+  height: 100vh; /* Occupy the full height of the container */
   position: absolute;
   z-index: 0;
   overflow: hidden;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 @media (max-width: 580px) {
@@ -196,6 +196,16 @@ h1.typewriter {
 }
 
 /* Home Section Styling */
+
+#home {
+  height: 100vh; /* Make the section take up the full height of the viewport */
+  display: flex; /* Use flexbox to center content vertically */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Center content vertically */
+  position: relative; /* Ensure z-index works */
+  z-index: 1;
+}
+
 .intro-text {
     font-size: 50px;
     text-align: center;
