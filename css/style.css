@@ -482,6 +482,8 @@ h1.typewriter {
   display: none;
 }
 
+/* Project Cards */
+
 @container projectCard (max-width: 450px) {
   .lg-view {
     display: none;
@@ -514,15 +516,24 @@ h1.typewriter {
 }
 
 .project-container {
-    display: grid;
-    grid-template-columns: repeat(6 , 1fr);
-    justify-content: center;
-    gap: 20px;
-    opacity: 0.85;
-    margin-bottom: 20px;
-    padding: 20px;
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
+  display: grid;
+  grid-template-columns: repeat(6 , 1fr);
+  justify-content: center;
+  gap: 20px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  max-width: 2400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 2000px) {
+  .project-container {
+      grid-template-columns: repeat(8, 1fr)
+  }
 }
 
 @media (max-width: 1200px) {
@@ -535,26 +546,23 @@ h1.typewriter {
     .project-container {
         grid-template-columns: repeat(2, 1fr)
     }
+
+    .project-card:last-child:nth-child(3n - 1) {
+      grid-column-end: -2;
+    }
 }
 
-@media (min-width: 1200px) {
-  .project-card:last-child:nth-child(3n - 1) {
-    grid-column-end: -2;
-  }
-}
-
-@media (min-width: 1200px) {
-  .project-card:nth-last-child(2):nth-child(3n + 1) {
+@media (min-width: 650px) and (max-width: 1200px) {
+  .project-card:last-child:nth-child(2n + 1) {
     grid-column-end: 4;
   }
 }
 
-@media (min-width: 1200px) {
-  .project-card:last-child:nth-child(3n - 2) {
-    grid-column-end: 5;
+@media (min-width: 2000px) {
+  .project-card:last-child:nth-child(4n + 1) {
+    grid-column-end: 6;
   }
 }
-
 .project-card {
     container-type: inline-size;
     container-name: projectCard;
@@ -569,10 +577,6 @@ h1.typewriter {
     position: relative;
     transition: transform 1s ease, opacity 1s ease;
     opacity: 1;
-}
-
-.project-card:last-child:nth-child(3n - 2) {
-  grid-column-end: 5;
 }
 
 .project-card .project-header {
