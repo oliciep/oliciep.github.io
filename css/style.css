@@ -87,9 +87,13 @@ h1.typewriter {
     }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1800px) {
   h1.typewriter.site-title {
       font-size: 80px;
+  }
+
+  .typewriter-container {
+    margin-top: -20vh;
   }
 }
 
@@ -150,7 +154,7 @@ h1.typewriter {
   }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1800x) {
   .mobile-spacing {
     display:block;
   }
@@ -212,7 +216,7 @@ h1.typewriter {
   }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1800px) {
   .toolbar a {
       color: #9ca0a8;
       text-decoration: none;
@@ -251,7 +255,7 @@ h1.typewriter {
     }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1800px) {
   .intro-text {
       font-size: 60px;
       padding: 10px;
