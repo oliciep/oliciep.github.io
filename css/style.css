@@ -241,6 +241,7 @@ h1.typewriter {
 .intro-text {
     font-size: 50px;
     text-align: center;
+    margin: 40px;
     max-width: 100%;
     opacity: 0;
     transform: translateY(20px);
@@ -252,6 +253,7 @@ h1.typewriter {
     .intro-text {
         font-size: 30px;
         padding: 10px;
+        margin: 0;
     }
 }
 
@@ -311,6 +313,18 @@ h1.typewriter {
         display: block;
         margin: 0 auto;
     }
+}
+
+@media (min-width: 1800px) {
+  .github-button, .linkedin-button, .resume-button {
+    font-size: 36px;
+    margin-top: 100px;
+  }
+  .github-button img, .linkedin-button img, .resume-button img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 
