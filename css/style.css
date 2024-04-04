@@ -945,12 +945,19 @@ h1.typewriter {
 .flag {
   position: relative;
   display: inline;
-  background: #262d3a;
   font-weight: 600;
   z-index: 15;
   padding: 6px 10px;
   text-align: left;
   border-radius: 5px;
+}
+
+.flag-past {
+  background: #262d3a;
+}
+
+.flag-present {
+  background: #049072;
 }
 
 .direction-l .flag:after,
