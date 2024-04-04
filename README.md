@@ -1,7 +1,7 @@
 
 # My Portfolio Website Repository
  
-This project is a HTML/CSS based scrolling website, that uses javascript for the UI and animations. It contains dynamic scaling CSS, scroll-based animations, project-made HTML templates and email functionality with form sanitisation via Web3Forms. 
+This project is a **HTML**/**CSS** based scrolling website, that uses **Javascript** for the UI and animations. It contains dynamic scaling **CSS**, scroll-based animations, project-made **HTML** templates and email functionality with form sanitisation via Web3Forms. 
 
  
 ## Demo 
@@ -9,10 +9,10 @@ This project is a HTML/CSS based scrolling website, that uses javascript for the
 ![](https://github.com/oliciep/oliciep.github.io/blob/main/demo.gif)
 
 ## Features 
-- Scrolling site with dynamic scaling CSS for different screen sizes.
+- Scrolling site with dynamic scaling **CSS** for different screen sizes.
 - 6 Distinct Sections: Home, Projects, Skills, Experience, Education and Contact.
-- Javascript animations for styling on CSS.
-- Project-written HTML templates for styling and content.
+- **Javascript** animations for stylised elements and backgrounds.
+- Project-written **HTML** templates for styling and content.
 - Regularly updated information and project cards.
 - Email functionality with client-side sanitisation.
 
