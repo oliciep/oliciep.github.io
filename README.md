@@ -1,7 +1,7 @@
 
 # My Portfolio Website Repository
  
-This project is a **HTML**/**CSS** based scrolling website, that uses **Javascript** for the UI and animations. It contains dynamic scaling **CSS**, scroll-based animations, project-made **HTML** templates and email functionality with form sanitisation via Web3Forms. 
+This project is a **HTML**/**CSS** based scrolling website, that uses **Javascript** for the UI and animations. It contains dynamic scaling **CSS**, scroll-based animations, project-made **HTML** templates and email functionality with form sanitisation via __Web3Forms__. 
 
  
 ## Demo 
